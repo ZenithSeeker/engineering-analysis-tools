@@ -1,0 +1,22 @@
+# Analysis Tools - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+
+# Symbolic mathematics (for beam_analysis.py)
+sympy>=1.12
+
+# Audio file handling (uses ffmpeg for format support)
+pydub>=0.25.1
+audioop-lts; python_version >= "3.13"   # pydub needs audioop, removed from Python 3.13
+
+# Tests
+pytest>=7
+
+# Note: pydub requires ffmpeg to be installed on your system
+# macOS:   brew install ffmpeg
+# Ubuntu:  sudo apt install ffmpeg
+# Windows: Download from https://ffmpeg.org/download.html
