@@ -48,7 +48,7 @@ python strouhal_plot.py fft_data.csv -v 10 -d 0.05
 
 ### `beam_analysis.py`: Macaulay's method, symbolically
 
-Solves statically determinate and indeterminate beams for reactions, shear, moment, slope and
+Written to validate hand calculations done for homework. SymPy was selected in order to practice tool usage, although a numerical method is more suited to this general problem space. Solves statically determinate and indeterminate beams for reactions, shear, moment, slope and
 deflection using SymPy singularity functions. Supports pins, rollers and fixed ends, plus point
 loads, point moments, and uniform or linearly varying distributed loads.
 
@@ -77,5 +77,4 @@ pytest
 
 The beam solver is checked against closed-form results: simply supported beams under a UDL
 (5wL⁴/384EI) and a midspan point load (PL³/48EI), and cantilevers under a tip load (PL³/3EI),
-a UDL (wL⁴/8EI) and an end moment (ML²/2EI). Those tests caught two real bugs: supports at x = 0
-were being silently dropped, and point moments had the wrong sign.
+a UDL (wL⁴/8EI) and an end moment (ML²/2EI). 
