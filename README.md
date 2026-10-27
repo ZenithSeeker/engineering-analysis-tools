@@ -3,7 +3,7 @@
 Small command-line tools I use to answer engineering questions from real measurements: spectral
 analysis of audio recordings, Strouhal-number scaling, and a symbolic beam solver.
 
-## Case study: why does one open car window go *wub-wub-wub*?
+## Investigation: Helmholtz Resonation while driving in car with open window 
 
 Driving with a single window down produces a low, pulsing pressure in the cabin. I recorded
 10 seconds of it on a phone ([`data/nz_car_window_buffeting.m4a`](data/nz_car_window_buffeting.m4a))
